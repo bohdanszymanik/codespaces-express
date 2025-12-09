@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "start": "nodemon server/index.js"
+    "start": "node server/server.js",
+    "main": "server/server.js"
   },
   "dependencies": {
     "ejs": "^3.1.10",
@@ -9,5 +10,6 @@
   },
   "devDependencies": {
     "nodemon": "^3.1.0"
-  }
+  },
+  "type": "module"
 }
