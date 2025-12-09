@@ -1,9 +1,10 @@
 import express from "express";
 import morgan from "morgan";
-import { load_config } from "./config";
+import { load_config } from "./config.js";
 
 export function app_create() {
     const app = express();
+    app.set("config", load_config())
     app.set("view engine", "ejs")
     app.set("views", "client/views")
     app.use(morgan('tiny'))
