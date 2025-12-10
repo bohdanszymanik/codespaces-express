@@ -1,6 +1,9 @@
+GET http://localhost:3000/
+
+###
 curl -X POST http://localhost:3000/oauth/token \
   -H "Content-Type: application/x-www-form-urlencoded" \
   -d "grant_type=password&username=test&password=secret&client_id=client1&client_secret=clientSecret"
 
 ###
-GET http://localhost:3000/
+curl -H "Authorization: Bearer d1c597e0d5293831d47c86c81e89953fcab040dc" http://localhost:3000/secure
